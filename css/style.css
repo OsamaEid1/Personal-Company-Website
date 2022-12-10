@@ -245,7 +245,7 @@ a{
     background-color: #fafafa;
 }
 .clicked{
-    color: var(--main-color);
+    color: var(--main-color) !important;
     background-color: #fafafa;
 }
 .header .main-nav > li >a:hover::before{
