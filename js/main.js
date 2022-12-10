@@ -2,15 +2,19 @@
 let otherLinks = document.querySelector(".other-links");
 let megaMenu = document.querySelector(".mega-menu");
 
+ //Show or Hide mega-menu when ckicking on the other links in navbar
 otherLinks.onclick = () => {
  document.body.onclick = (e) => {
-  if (e.target.className == "other-links") {
+  if (e.target.className == "other-links") { //If click was on the other links in navbar
    megaMenu.classList.toggle("mega-clicked");
-  } else {
+   otherLinks.classList.toggle("clicked");
+  } else { //If click was on the rest of body
    megaMenu.classList.remove("mega-clicked");
+   otherLinks.classList.remove("clicked");
   }
  };
 };
+
 
 //Progress bars in skills section
 let skillsSection = document.querySelector(".our-skills");
@@ -23,7 +27,7 @@ window.onscroll = () => {
    s.style.width = s.dataset.width;
   });
  }
- //Belong to stats counter
+ //This belong to stats counter
  if (window.scrollY >= section.offsetTop) {
   if (!started) {
    numbers.forEach((num) => startCount(num));
@@ -31,6 +35,7 @@ window.onscroll = () => {
   started = true;
  }
 };
+
 
 //Event Time Counter
 let days = document.querySelector(".events .unit span:first-child");
@@ -45,8 +50,6 @@ let EventDate = new Date(2023, 12, 31, 23, 59, 59).getTime();
 let counter = setInterval(() => {
  // Get Date Now
  let dateNow = new Date().getTime();
-
- // Find The Date Difference Between Now And Countdown Date
  let dateDiff = EventDate - dateNow;
 
  // Get Time Units
@@ -64,6 +67,7 @@ let counter = setInterval(() => {
   clearInterval(counter);
  }
 }, 1000);
+
 
 //Filter Videos in Top Videos section
 let lists = document.querySelectorAll(".videos .list ul li");
@@ -86,7 +90,7 @@ lists.forEach((li) => {
   li.children[0].style.color = getComputedStyle(
    document.documentElement
   ).getPropertyValue("--main-color");
-
+  
   //Change the image according to li that clicked
   switch (li.dataset.imgNumber) {
    case "1":
@@ -108,7 +112,7 @@ lists.forEach((li) => {
     img.src = "imgs/video-preview-6.jpeg";
     break;
    case "7":
-    img.src = "../../imgs/video-preview-7.jpeg";
+    img.src = "imgs/video-preview-7.jpeg";
     break;
 
    default:
@@ -118,10 +122,11 @@ lists.forEach((li) => {
  };
 });
 
-//Stats counter
+
+//Stats Stats counter
 let numbers = document.querySelectorAll(".stats .box .number");
 let section = document.querySelector(".stats");
-let started = false; // Function Started ? No
+let started = false;
 
 //this function called by onscroll function in skill bar code in the top
 function startCount(el) {
