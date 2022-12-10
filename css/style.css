@@ -244,6 +244,10 @@ a{
     color: var(--main-color);
     background-color: #fafafa;
 }
+.clicked{
+    color: var(--main-color);
+    background-color: #fafafa;
+}
 .header .main-nav > li >a:hover::before{
     width: 100%;
 }
