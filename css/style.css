@@ -51,7 +51,8 @@ a{
     text-decoration: none;
 }
 
-input:focus{
+input:focus,
+textarea:focus-visible {
     outline: none;
 }
 
