@@ -51,6 +51,10 @@ a{
     text-decoration: none;
 }
 
+input:focus{
+    outline: none;
+}
+
 .main-title{
     width: -webkit-fit-content;
     width: -moz-fit-content;
@@ -1140,9 +1144,6 @@ a{
 }
 .events .subscribe input[type="submit"]:hover{
     background-color: var(--main-color-alt);
-}
-.events .subscribe input:focus{
-    outline: none;
 }
 .events .subscribe input::placeholder{
     transition: opacity var(--main-transition);
