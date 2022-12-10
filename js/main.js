@@ -28,7 +28,7 @@ window.onscroll = () => {
   });
  }
  //This belong to stats counter
- if (window.scrollY >= section.offsetTop) {
+ if (window.scrollY >= section.offsetTop - 300) {
   if (!started) {
    numbers.forEach((num) => startCount(num));
   }
