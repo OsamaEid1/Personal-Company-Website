@@ -90,25 +90,25 @@ lists.forEach((li) => {
   //Change the image according to li that clicked
   switch (li.dataset.imgNumber) {
    case "1":
-    img.src = "../imgs/video-preview.jpg";
+    img.src = "../../imgs/video-preview.jpg";
     break;
    case "2":
-    img.src = "../imgs/video-preview-2.jpg";
+    img.src = "../../imgs/video-preview-2.jpg";
     break;
    case "3":
-    img.src = "../imgs/video-preview-3.png";
+    img.src = "../../imgs/video-preview-3.png";
     break;
    case "4":
-    img.src = "../imgs/video-preview-4.jpg";
+    img.src = "../../imgs/video-preview-4.jpg";
     break;
    case "5":
-    img.src = "../imgs/video-preview-5.png";
+    img.src = "../../imgs/video-preview-5.png";
     break;
    case "6":
-    img.src = "../imgs/video-preview-6.jpeg";
+    img.src = "../../imgs/video-preview-6.jpeg";
     break;
    case "7":
-    img.src = "../imgs/video-preview-7.jpeg";
+    img.src = "../../imgs/video-preview-7.jpeg";
     break;
 
    default:
