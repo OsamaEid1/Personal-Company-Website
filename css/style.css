@@ -1663,4 +1663,11 @@ textarea:focus-visible {
     border-top: 1px solid #444;
     text-align: center;
 }
+.footer .copyright a {
+    color: white;
+    text-decoration: none;
+}
+.footer .copyright a:hover {
+    text-decoration: underline;
+}
 /* End Footer */
